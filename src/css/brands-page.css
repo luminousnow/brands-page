@@ -174,6 +174,10 @@ html {
   background: #fff;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
@@ -263,19 +267,35 @@ a:focus {
 
 .slidenav {
   position: absolute;
-  width: 300px;
-  margin-left: -150px;
-  left: 50%;
-  bottom: 0;
+  left: 80px;
+  bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+
   text-align: center;
-  padding: 2em;
 }
 
 .slidenav__item {
-  border: 0;
-  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+
+  /* background: rgba(0, 0, 0, 0.4); */
+  font-size: 1.2em;
   font-weight: bold;
-  color: var(--color-nav);
+  color: #fff;
+
+  transition: background-color 300ms ease-in;
+}
+
+.slidenav__item:first-child {
+  align-self: flex-start;
 }
 
 .slidenav__item:focus {
@@ -283,7 +303,8 @@ a:focus {
 }
 
 .slidenav__item:hover {
-  color: var(--color-nav-hover);
+  background-color: #000;
+  cursor: pointer;
 }
 
 .shape {
@@ -298,7 +319,7 @@ a:focus {
 .slide__title {
   position: relative;
   font-size: var(--fontsize-stitle);
-  margin: 0;
+  /* margin: 0; */
   cursor: default;
   line-height: 1;
   color: var(--color-stitle);
@@ -306,15 +327,16 @@ a:focus {
 
 .slide__desc {
   position: absolute;
-  right: 0;
-  top: 40px;
-  width: 50vw;
-  font-size: 1.5em;
-  /* margin: 0 0 2em 0; */
-  cursor: default;
-  color: var(--color-sdesc);
-  padding: 0 1em;
+  top: 60%;
+  /* right: 10px; */
+  width: 60%;
+  padding: 1em;
+
   text-align: justify;
+  font-size: 1.2em;
+  font-style: italic;
+  color: rgb(210, 210, 210);
+  /* background: rgba(0, 0, 0, 0.4); */
 }
 
 .slide__link {
