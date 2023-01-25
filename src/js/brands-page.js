@@ -272,7 +272,8 @@
   }
 
   new Slideshow(document.querySelector(".slideshow"));
+
   imagesLoaded(".slide__img", { background: true }, () =>
-    document.body.classList.remove("loading")
+    document.querySelector(".wrapper").classList.remove("loading")
   );
 }
