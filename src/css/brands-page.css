@@ -282,16 +282,16 @@ main {
   width: 100%;
 }
 
-.content {
+/* .content {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   min-height: 100vh;
-}
+} */
 
-.content--fixed {
+/* .content--fixed {
   position: fixed;
   z-index: 10000;
   top: 0;
@@ -314,10 +314,10 @@ main {
 
 .content--fixed a {
   pointer-events: auto;
-}
+} */
 
 /* Header */
-.codrops-header {
+/* .codrops-header {
   position: relative;
   z-index: 100;
   display: flex;
@@ -342,17 +342,17 @@ main {
   grid-area: github;
   justify-self: end;
   padding: 0.5em 0;
-}
+} */
 
-.demos {
+/* .demos {
   position: relative;
   display: block;
   align-self: end;
   text-align: center;
   grid-area: demos;
-}
+} */
 
-.demo {
+/* .demo {
   margin: 0 0.15em;
 }
 
@@ -373,23 +373,23 @@ main {
 
 a.demo--current {
   pointer-events: none;
-}
+} */
 
 /* Top Navigation Style */
-.codrops-links {
+/* .codrops-links {
   position: relative;
   display: flex;
   justify-content: center;
   margin: 0 1em 0 0;
   text-align: center;
   white-space: nowrap;
-}
+} */
 
-.codrops-icon {
+/* .codrops-icon {
   display: inline-block;
   margin: 0.15em;
   padding: 0.25em;
-}
+} */
 
 .slideshow {
   width: 100%;
@@ -477,13 +477,16 @@ a.demo--current {
 }
 
 .slide__desc {
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 50vw;
   font-size: 1.5em;
-  margin: 0 0 2em 0;
+  /* margin: 0 0 2em 0; */
   cursor: default;
   color: var(--color-sdesc);
   padding: 0 1em;
-  text-align: center;
+  text-align: justify;
 }
 
 .slide__link {
@@ -502,7 +505,7 @@ a.demo--current {
   background: var(--color-slink-hover-bg);
 }
 
-@media screen and (min-width: 55em) {
+/* @media screen and (min-width: 55em) {
   .demos {
     display: flex;
     justify-self: end;
@@ -528,25 +531,25 @@ a.demo--current {
   .demo--current span {
     display: block;
   }
-}
+} */
 
 @media screen and (max-width: 55em) {
   body {
     padding: 0 0 4em 0;
   }
-  .content {
+  /* .content {
     flex-direction: column;
     height: auto;
     min-height: 0;
     padding-bottom: 10em;
-  }
-  .content--fixed {
+  } */
+  /* .content--fixed {
     position: relative;
     z-index: 1000;
     display: block;
     padding: 0.85em;
-  }
-  .codrops-header {
+  } */
+  /* .codrops-header {
     flex-direction: column;
     align-items: center;
   }
@@ -554,16 +557,16 @@ a.demo--current {
     font-weight: bold;
     padding-bottom: 0.25em;
     text-align: center;
-  }
-  .github {
+  } */
+  /* .github {
     display: none;
-  }
-  .codrops-links {
+  } */
+  /* .codrops-links {
     margin: 0;
-  }
-  .slide__desc {
+  } */
+  /* .slide__desc {
     font-size: 1em;
-  }
+  } */
   .slide__link {
     font-size: 0.85em;
   }

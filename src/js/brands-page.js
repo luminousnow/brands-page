@@ -1,5 +1,4 @@
 /**
- * demo2.js
  * http://www.codrops.com
  *
  * Licensed under the MIT license.
@@ -261,7 +260,7 @@
         anime({
           targets: this.DOM.shape,
           duration: this.settings.animation.shape.duration,
-          delay: 700,
+          // delay: 700,
           easing: this.settings.animation.shape.easing.out,
           d: this.paths.initial,
           complete: () => (this.isAnimating = false),
