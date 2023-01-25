@@ -48,7 +48,7 @@
       this.settings = {
         animation: {
           slides: {
-            duration: 400,
+            duration: 700,
             easing: "easeOutQuint",
           },
           shape: {
